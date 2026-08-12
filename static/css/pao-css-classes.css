@@ -1,0 +1,1311 @@
+/* 
+==================================
+PYTHON ASIA ORGANIZATION CSS GUIDE
+==================================
+This CSS follows the brand guide specifications from the Figma design
+*/
+
+/* 
+----------------------------------
+TYPOGRAPHY
+----------------------------------
+*/
+
+/* Font imports - Raleway for headings, Open Sans for body */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400&display=swap');
+
+:root {
+  /* Colors - Primary */
+  --color-navy: #223843;
+  --color-blue: #4C52C7;
+  --color-yellow: #FAD02E;
+  
+  /* Colors - Secondary */
+  --color-cream-light: #FEF6D7;
+  --color-cream: #FEF1BE;
+  
+  /* Colors - Tertiary */
+  --color-red: #FE4A49;
+  --color-green: #45ED74;
+  --color-light-blue: #47B2F5;
+  
+  /* Colors - Greys */
+  --color-dark-grey: #2A3151;
+  --color-medium-grey: #9A9184;
+  --color-light-grey: #D4D3D2;
+  --color-lighter-grey: #CCCCCC;
+  
+  /* Text colors */
+  --text-dark: #000000;
+  --text-muted: #525252;
+  
+  /* Font families */
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-accent: 'Source Sans Pro', sans-serif;
+  
+  /* Line heights */
+  --line-height-heading: 1.174;
+  --line-height-body: 1.406;
+  --line-height-button: 1.362;
+  
+  /* Font sizes */
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 36px;
+  --font-size-subtitle: 24px;
+  --font-size-body-big: 20px;
+  --font-size-body: 16px;
+  --font-size-small: 12px;
+  --font-size-xs: 10px;
+}
+
+/* Typography - Headers */
+.pao-h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-heading);
+  color: var(--text-dark);
+  text-transform: capitalize;
+}
+
+.pao-h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.pao-h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+  color: var(--text-dark);
+}
+
+/* Typography - Body Text */
+.pao-subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-body);
+  color: var(--color-navy);
+}
+
+.pao-body-big {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--font-size-body-big);
+  line-height: var(--line-height-body);
+  color: var(--color-navy);
+}
+
+.pao-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-navy);
+}
+
+.pao-body-small {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-body);
+  color: var(--color-navy);
+}
+
+.pao-body-xs {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-body);
+  color: var(--color-navy);
+}
+
+/* Typography - Buttons and Links */
+.pao-button-text {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--font-size-body-big);
+  line-height: var(--line-height-button);
+  text-transform: capitalize;
+}
+
+.pao-nav-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-button);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+.pao-link-plain {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pao-link-plain:hover,
+.pao-link-plain:focus,
+.pao-link-plain:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography - Brand Title */
+.pao-brand-title {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.257;
+  letter-spacing: 25%;
+  color: var(--color-dark-grey);
+}
+
+/* 
+----------------------------------
+COLOR UTILITIES
+----------------------------------
+*/
+
+/* Background Colors - Primary */
+.pao-bg-navy {
+  background-color: var(--color-navy);
+}
+
+.pao-bg-blue {
+  background-color: var(--color-blue);
+}
+
+.pao-bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+/* Background Colors - Secondary */
+.pao-bg-cream-light {
+  background-color: var(--color-cream-light);
+}
+
+.pao-bg-cream {
+  background-color: var(--color-cream);
+}
+
+/* Background Colors - Tertiary */
+.pao-bg-red {
+  background-color: var(--color-red);
+}
+
+.pao-bg-green {
+  background-color: var(--color-green);
+}
+
+.pao-bg-light-blue {
+  background-color: var(--color-light-blue);
+}
+
+/* Background Colors - Greys */
+.pao-bg-dark-grey {
+  background-color: var(--color-dark-grey);
+}
+
+.pao-bg-medium-grey {
+  background-color: var(--color-medium-grey);
+}
+
+.pao-bg-light-grey {
+  background-color: var(--color-light-grey);
+}
+
+.pao-bg-lighter-grey {
+  background-color: var(--color-lighter-grey);
+}
+
+/* Text Colors */
+.pao-text-navy {
+  color: var(--color-navy);
+}
+
+.pao-text-blue {
+  color: var(--color-blue);
+}
+
+.pao-text-yellow {
+  color: var(--color-yellow);
+}
+
+.pao-text-red {
+  color: var(--color-red);
+}
+
+.pao-text-green {
+  color: var(--color-green);
+}
+
+.pao-text-light-blue {
+  color: var(--color-light-blue);
+}
+
+.pao-text-dark-grey {
+  color: var(--color-dark-grey);
+}
+
+.pao-text-medium-grey {
+  color: var(--color-medium-grey);
+}
+
+.pao-text-light-grey {
+  color: var(--color-light-grey);
+}
+
+.pao-text-dark {
+  color: var(--text-dark);
+}
+
+.pao-text-muted {
+  color: var(--text-muted);
+}
+
+/* 
+----------------------------------
+COMPONENTS
+----------------------------------
+*/
+
+/* Buttons */
+.pao-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pao-button-primary {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.pao-button-primary:hover {
+  background-color: #3a40a0;
+  color: white;
+}
+
+.pao-button-secondary {
+  background-color: transparent;
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.pao-button-secondary:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+/* Cards */
+.pao-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* PyCon Card Component */
+.pao-pycon-card-component {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 211px;
+  height: 265px;
+  margin: 0 auto;
+}
+
+.pao-pycon-card-header {
+  background-color: var(--color-cream);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pao-pycon-card-body {
+  background-color: var(--color-blue);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 125px;
+}
+
+.pao-pycon-card-spacer {
+  height: 14%;
+}
+
+.pao-pycon-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.pao-pycon-card-content {
+  display: flex;
+  margin: 4px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.2;
+  height: 55%;
+}
+
+/*
+----------------------------------
+BLOG COMPONENTS
+----------------------------------
+*/
+
+/* Blog Content Container */
+.blog-content-container {
+  max-width: 1133px;
+  margin: 0 auto;
+}
+
+/* Blog Single Page */
+.blog-single-hero {
+  padding: 60px 0;
+}
+
+.blog-single-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.blog-single-meta-left {
+  flex: 0 0 16.666667%; /* col-md-2 equivalent */
+  max-width: 16.666667%;
+}
+
+.blog-single-content-right {
+  flex: 0 0 66.666667%; /* col-md-8 equivalent */
+  max-width: 66.666667%;
+}
+
+.blog-single-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  color: var(--color-red);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog-meta-author-time {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.blog-meta-separator {
+  border-bottom: 1px solid var(--color-light-grey);
+  margin: 20px 0;
+}
+
+.blog-meta-date {
+  font-family: var(--font-body);
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 1.31;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.blog-social-share-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.blog-social-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  transition: color 0.3s ease;
+}
+
+.blog-social-icon:hover {
+  color: var(--color-blue);
+}
+
+.blog-single-featured-image {
+  height: 378px;
+  background-color: var(--color-blue);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.blog-single-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blog-single-content {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-navy);
+}
+
+.blog-single-content h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  margin: 40px 0 20px 0;
+}
+
+.blog-single-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  margin: 30px 0 15px 0;
+}
+
+.blog-single-content p {
+  margin-bottom: 20px;
+}
+
+.blog-single-content ul,
+.blog-single-content ol {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.blog-single-content li {
+  margin-bottom: 8px;
+}
+
+/* Blog Hero Card */
+.pao-blog-hero-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  height: 378px;
+}
+
+.pao-blog-hero-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--color-navy);
+}
+
+.pao-blog-hero-image {
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pao-blog-hero-image img,
+.blog-hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Blog Regular Cards */
+.pao-blog-card {
+  background-color: var(--color-navy);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 567px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pao-blog-card-image {
+  height: 320px;
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pao-blog-card-image img,
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Default logo styling - smaller size */
+.default-logo {
+  object-fit: contain !important;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pao-blog-card {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .pao-blog-card-image {
+    height: 260px;
+  }
+
+  .pao-blog-hero-card {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .pao-blog-hero-image {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pao-blog-card {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .pao-blog-card-image {
+    height: 230px;
+  }
+
+  .pao-blog-hero-card {
+    min-height: 250px;
+  }
+
+  .pao-blog-hero-image {
+    min-height: 150px;
+  }
+}
+
+.pao-blog-card-content {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.pao-blog-author {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pao-blog-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: white;
+}
+
+.pao-blog-excerpt {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+}
+
+.pao-blog-card .pao-blog-author {
+  font-size: 12px;
+  margin: 0;
+}
+
+.pao-blog-card .pao-blog-title {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.pao-blog-card .pao-blog-excerpt {
+  margin: 0;
+}
+
+/* Blog Read More Button */
+.pao-blog-read-more {
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.26;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 15px 29px;
+  display: inline-block;
+  width: 157px;
+  height: 54px;
+  transition: all 0.3s ease;
+}
+
+.pao-blog-read-more:hover {
+  background-color: #e5c02a;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+/* Section Backgrounds */
+.pao-section-primary {
+  background-color: var(--color-cream-light);
+  padding: 64px 0;
+}
+
+.pao-section-secondary {
+  background-color: white;
+  padding: 64px 0;
+}
+
+.pao-section-accent {
+  background-color: var(--color-navy);
+  color: white;
+  padding: 64px 0;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--color-cream-light);
+  padding: 0px 0;
+}
+
+.navbar-nav {
+  gap: 35px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-navy);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--color-blue);
+}
+
+/* Event Link Styling */
+.pao-event-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.pao-event-link:hover {
+  border-bottom-color: var(--color-yellow);
+  color: white;
+}
+
+/* Footer */
+footer {
+  flex-shrink: 0;
+  background-color: var(--color-cream-light);
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* 
+----------------------------------
+UTILITIES
+----------------------------------
+*/
+
+/* Containers */
+.pao-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 36px;
+    --font-size-h3: 28px;
+    --font-size-subtitle: 20px;
+    --font-size-body-big: 18px;
+  }
+  
+  .pao-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-h1: 36px;
+    --font-size-h2: 28px;
+    --font-size-h3: 22px;
+    --font-size-subtitle: 18px;
+    --font-size-body-big: 16px;
+  }
+  
+  .pao-container {
+    padding: 0 16px;
+  }
+}
+
+/*
+----------------------------------
+SIZE UTILITIES
+----------------------------------
+*/
+
+/* Max Heights */
+.pao-max-height-500 {
+  max-height: 500px;
+}
+
+.pao-max-height-300 {
+  max-height: 300px;
+}
+
+.pao-max-height-150 {
+  max-height: 150px;
+}
+
+/* Fixed Heights */
+.pao-height-140 {
+  height: 140px;
+}
+
+.pao-height-125 {
+  height: 125px;
+}
+
+.pao-height-150 {
+  height: 150px;
+}
+
+/* Width/Height Combinations */
+.pao-avatar-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pao-pycon-card {
+  width: 211px;
+  height: 265px;
+  margin: 0 auto;
+}
+
+.pao-sponsor-logo-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pao-image-contain {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* Flex Heights - Percentage based */
+.pao-height-14p {
+  height: 14%;
+}
+
+.pao-height-15p {
+  height: 15%;
+}
+
+.pao-height-55p {
+  height: 55%;
+}
+
+/* General Styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-navy);
+  background-color: var(--color-cream-light);
+  line-height: var(--line-height-body);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Content Sections */
+.content h2, .content h3 {
+  color: var(--color-red);
+  font-family: var(--font-heading);
+}
+
+.content p {
+  font-family: var(--font-body);
+  color: var(--color-navy);
+}
+
+.content a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.content a:hover {
+  color: var(--color-red);
+}
+
+/* Sponsor Section */
+.blue-section {
+  background-color: var(--color-blue);
+  color: white;
+  padding: 64px 0;
+}
+
+.blue-section h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background-color: var(--color-red); /* #FE4A49 */
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFFFFF;
+  color: var(--color-red); /* #FE4A49 */
+}
+
+.sponsor-title h1 {
+  color: var(--color-red);
+}
+
+.sponsor-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sponsor Card - Based on Figma Design */
+.pao-sponsor-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-navy);
+  border-radius: 10px;
+  width: 199px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.pao-sponsor-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.pao-sponsor-card-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}
+
+.pao-sponsor-card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pao-sponsor-card-tier {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1em;
+  text-align: center;
+  color: var(--color-navy);
+  padding: 10px;
+  width: 100%;
+}
+
+/* Sponsors Container - Responsive Wrap */
+.pao-sponsors-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+/* GitHub Sponsors Container Card */
+.pao-github-sponsors-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-navy);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 917px;
+  min-height: 156px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.pao-github-sponsors-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.174em;
+  text-align: center;
+  color: var(--color-navy);
+}
+
+.pao-github-sponsors-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pao-github-sponsor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 50px;
+}
+
+.pao-github-sponsor-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.pao-github-sponsor-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pao-github-sponsor-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.174em;
+  text-align: center;
+  color: #000000;
+  word-break: break-word;
+}
+
+/*
+----------------------------------
+FOOTER STYLES
+----------------------------------
+*/
+
+.pao-footer {
+  background-color: var(--color-navy);
+  padding: 40px 0;
+  margin-top: 0;
+}
+
+.pao-footer .navbar-brand {
+  display: inline-block;
+}
+
+/*
+----------------------------------
+JOB BOARD STYLES
+----------------------------------
+*/
+
+/* Job Board Section */
+.pao-job-board-section {
+  background-color: var(--color-cream-light);
+  min-height: 100vh;
+}
+
+/* Job Grid - 2 column layout */
+.pao-job-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pao-job-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Job Card */
+.pao-job-card {
+  display: block;
+  padding: 24px 24px 24px 0;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.pao-job-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pao-job-company {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.pao-job-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--color-red);
+  text-decoration: underline;
+  margin: 0;
+}
+
+.pao-job-meta {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  margin-top: 5px;
+}
+
+/* Job Detail Page */
+.pao-job-detail-section {
+  background-color: var(--color-cream-light);
+  min-height: 100vh;
+}
+
+.pao-job-detail-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pao-job-detail-header {
+  border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 24px;
+}
+
+.pao-job-detail-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+  color: var(--color-red);
+  margin-bottom: 5px;
+}
+
+.pao-job-detail-company {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  margin-bottom: 0;
+}
+
+.pao-job-detail-meta {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--color-navy);
+}
+
+.pao-job-detail-content {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--color-navy);
+  padding-top: 15px;
+}
+
+.pao-job-detail-content h2,
+.pao-job-detail-content h3 {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.pao-job-detail-content ul,
+.pao-job-detail-content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.pao-job-detail-content li {
+  margin-bottom: 8px;
+}
+
+/* Apply Button - Red background per Figma */
+.pao-job-apply-button {
+  display: inline-block;
+  background-color: var(--color-red);
+  color: #F2F2F2;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.pao-job-apply-button:hover {
+  background-color: #e54342;
+  color: #F2F2F2;
+  transform: translateY(-2px);
+}
+
+/* Empty state */
+.pao-job-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Back link */
+.pao-job-back-link a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.pao-job-back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pao-job-detail-title {
+    font-size: 36px;
+  }
+
+  .pao-job-detail-company {
+    font-size: 24px;
+  }
+
+  .pao-job-company {
+    font-size: 24px;
+  }
+
+  .pao-job-title {
+    font-size: 20px;
+  }
+}
